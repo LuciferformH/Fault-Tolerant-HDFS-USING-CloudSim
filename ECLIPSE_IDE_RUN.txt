@@ -1,0 +1,60 @@
+================================================================================
+              RUN IN ECLIPSE - STEP BY STEP GUIDE
+================================================================================
+
+PREREQUISITES
+================================================================================
+1. Eclipse IDE for Java Developers
+   Download: https://www.eclipse.org/downloads/packages/
+
+2. Java JDK 21
+   Download: https://adoptium.net/
+
+
+================================================================================
+STEP 1: IMPORT PROJECT
+================================================================================
+
+1. Open Eclipse IDE
+2. Go to: File → Import...
+3. Select: General → Projects from Folder or Archive
+4. Click: Next >
+5. Browse to: Project folder
+6. Click: Finish
+
+
+================================================================================
+STEP 2: ADD CLOUDSIM JAR
+================================================================================
+
+1. Right-click project → Build Path → Configure Build Path
+2. Go to: Libraries tab
+3. Click: Add External JARs...
+4. Select: cloudsim-3.0.3.jar
+5. Click: Apply and Close
+
+
+================================================================================
+STEP 3: RUN
+================================================================================
+
+1. Right-click on: HDFSResearchArchive.java
+2. Select: Run As → Java Application
+3. View output in Console
+
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+=== Group G3: Fault-Tolerant HDFS for Scientific Research Archive ===
+
+Step 1: Creating 4 Regional Data Centers...
+  Created DC_US-East with 20 hosts
+  ...
+
+Policy Comparison:
+| Round Robin  | 250.00 ms | 1.39 ops/s |
+| Throttled    | 180.50 ms | 1.85 ops/s |
+
+Improvement: 27.8% faster response
