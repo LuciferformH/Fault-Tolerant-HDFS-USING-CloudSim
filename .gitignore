@@ -1,0 +1,5 @@
+build/
+*.class
+*.zip
+*.jar
+.DS_Store
